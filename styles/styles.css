@@ -2,6 +2,7 @@ body {
     margin: 0px;
     background-color: aliceblue;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: grid;
 }
 
 header {
@@ -41,7 +42,30 @@ li {
     background-color: #404040;
 }
 
-#nameAndTitle {
-    height: 400px;
+#imageAndNameContainer{
     margin-top: 50px;
+    height: 400px;
+    display: grid;
+    grid-template-columns: 1 / span 2;
+}
+
+#mainImageContainer {
+    grid-column: 1 / span 1;
+}
+
+#nameAndTitleContainer {
+    grid-column: 2 / span 1;
+}
+
+#nameAndTitleText {
+    text-align: center;
+    margin-top: 160px;
+}
+
+.subtitle {
+    margin-left: 5px;
+}
+
+.aboutMeParagraph {
+    margin-left: 5px;
 }
