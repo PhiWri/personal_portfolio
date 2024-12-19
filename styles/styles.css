@@ -46,11 +46,18 @@ li {
     margin-top: 50px;
     height: 400px;
     display: grid;
-    grid-template-columns: 1 / span 2;
+    grid: 400px / 50% 50%;
 }
 
 #mainImageContainer {
     grid-column: 1 / span 1;
+}
+
+#mainImage {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    border: 10px solid hsl(0, 0%, 70%);
 }
 
 #nameAndTitleContainer {
